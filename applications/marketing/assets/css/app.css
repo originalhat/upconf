@@ -1,0 +1,89 @@
+@import "./phoenix.css";
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 992px) {
+  .page-container {
+    margin: 0 auto;
+    width: 960px;
+  }
+}
+
+.header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 0;
+}
+
+.header__heading {
+  font-size: 22px;
+  padding: 8px;
+}
+
+.white-waves {
+  background-image: url("/images/white-waves.png");
+}
+
+.callout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 148px;
+  padding-top: 148px;
+}
+
+.callout__heading {
+  color: black;
+  font-size: 32px;
+  margin: auto;
+  text-align: left;
+}
+
+.email {
+  -webkit-box-shadow: 0 0 4px 2px rgba(4,4,4,0.15);
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 2px rgba(4,4,4,0.15);
+  margin-left: 64px;
+  padding: 16px 24px;
+  text-align: left;
+}
+
+.email__heading {
+  margin: 0;
+  color: #4a4a4a;
+}
+
+.email__subheading {
+  font-weight: 600;
+  margin: 0;
+  color: #4a4a4a;
+}
+
+.email__form {
+  margin: 8px 0;
+}
+
+.email__form form {
+  display: flex;
+  margin: 0;
+}
+
+.email__form [type="email"] {
+  background-color: #FAFAFA;
+  border-color: #CCC;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: inset 0 0 4px 0 rgba(4,4,4,0.15);
+  flex: auto;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding: 11px;
+}
+
+.email__form [type="submit"] {
+  margin-left: 8px;
+}

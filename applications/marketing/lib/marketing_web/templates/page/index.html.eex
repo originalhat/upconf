@@ -1,0 +1,17 @@
+<section class="white-waves">
+    <div class="callout page-container">
+        <h2 class="callout__heading">SalonConf is changing how ideas spread–one conference at a time</h2>
+
+        <div class="email">
+            <h3 class="email__heading">Get the latest updates!</h3>
+            <h4 class="email__subheading">Sign up with your email</h4>
+
+            <div class="email__form">
+                <form action="">
+                    <input type="email" placeholder="email@domain.com" required>
+                    <input type="submit" value="Sign up!" />
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
