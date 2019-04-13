@@ -89,44 +89,44 @@ body {
   margin-left: 8px;
 }
 
-.swarm-what {
+.tracker-what {
   margin-top: 64px;
   margin-bottom: 64px;
   padding: 0 80px;
   text-align: center;
 }
 
-.swarm-what__heading {
+.tracker-what__heading {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-.swarm-what__body {
+.tracker-what__body {
   font-size: 24px;
 }
 
-.swarm-how {
+.tracker-how {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 16px;
   margin-top: 16px;
 }
 
-.swarm-how__content {
+.tracker-how__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 16px;
 }
 
-.swarm-how__heading {
+.tracker-how__heading {
   color: #242424;
   font-size: 24px;
   font-weight: 600;
 }
 
-.swarm-how__image {
+.tracker-how__image {
   padding: 16px;
 }
 
@@ -135,7 +135,6 @@ body {
   background-image: url("/images/white-waves.png");
   border-top: 1px solid #e1e1e1;
   display: flex;
-  height: 120px;
   margin-top: -8px;
   padding: 16px;
 }

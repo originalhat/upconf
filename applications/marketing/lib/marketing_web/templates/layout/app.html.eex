@@ -4,12 +4,12 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ConfSwarm – Dynamic conference collaboration</title>
+    <title>ConfTracker – conference organization and collaboration</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
   <body>
     <header class="header">
-        <h1 class="header__heading page-container">ConfSwarm</h1>
+        <h1 class="header__heading page-container">ConfTracker</h1>
     </header>
 
     <main>
