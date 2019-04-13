@@ -4,17 +4,23 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>SalonConf – Dynamic conference collaboration</title>
+    <title>ConfSwarm – Dynamic conference collaboration</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
   <body>
     <header class="header">
-        <h1 class="header__heading page-container">SalonConf</h1>
+        <h1 class="header__heading page-container">ConfSwarm</h1>
     </header>
 
     <main>
       <%= render @view_module, @view_template, assigns %>
     </main>
+
+    <footer class="footer">
+        <div class="page-container">
+            © <%= DateTime.utc_now.year %> HiveMind Software. All Rights Reserved.
+        </div>
+    </footer>
 
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
