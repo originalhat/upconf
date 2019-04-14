@@ -1,6 +1,6 @@
 <section class="white-waves">
     <div class="callout page-container">
-        <h2 class="callout__heading">ConfTracker is changing how ideas spread–one conference at a time</h2>
+        <h2 class="callout__heading">UpConf is changing how ideas spread–one conference at a time</h2>
 
         <div class="email">
             <h3 class="email__heading">Get the latest updates!</h3>
@@ -17,9 +17,9 @@
 </section>
 
 <section>
-    <div class="tracker-what page-container">
-        <h2 class="tracker-what__heading">Modern collaboration for successful conferences</h2>
-        <p class="tracker-what__body">
+    <div class="upconf-what page-container">
+        <h2 class="upconf-what__heading">Modern collaboration for successful conferences</h2>
+        <p class="upconf-what__body">
             Bringing a fresh take to conference organization and collaboration with dynamic tooling for planning,
             orchestrating, and communication exciting new ideas in realtime.
         </p>
@@ -27,27 +27,27 @@
 </section>
 
 <section>
-    <div class="tracker-how page-container">
-        <div class="tracker-how__content">
-            <h3 class="tracker-how__heading">Establish a presence</h3>
-            <p class="tracker-how__body">
-                <strong>Create a conference with a purpose.</strong> ConfTracker makes creating an online presence a
+    <div class="upconf-how page-container">
+        <div class="upconf-how__content">
+            <h3 class="upconf-how__heading">Establish a presence</h3>
+            <p class="upconf-how__body">
+                <strong>Create a conference with a purpose.</strong> UpConf makes creating an online presence a
                 breeze. Easily communicate dates, time, locations, deadlines, and schedules with attendees.
             </p>
         </div>
         
-        <img class="tracker-how__image" src="<%= Routes.static_path(@conn, "/images/DO_NOT_SHIP-first.svg") %>" alt="compelling image"/>
+        <img class="upconf-how__image" src="<%= Routes.static_path(@conn, "/images/DO_NOT_SHIP-first.svg") %>" alt="compelling image"/>
     </div>
 </section>
 
 <section>
-    <div class="tracker-how page-container">
-        <img class="tracker-how__image" src="<%= Routes.static_path(@conn, "/images/DO_NOT_SHIP-second.svg") %>" alt="Second compelling image"/>
+    <div class="upconf-how page-container">
+        <img class="upconf-how__image" src="<%= Routes.static_path(@conn, "/images/DO_NOT_SHIP-second.svg") %>" alt="Second compelling image"/>
 
-        <div class="tracker-how__content">
-            <h3 class="tracker-how__heading">Rapid communication</h3>
-            <p class="tracker-how__body">
-                <strong>Stay connected with attendees.</strong> Successful conferences are well connected. ConfTracker
+        <div class="upconf-how__content">
+            <h3 class="upconf-how__heading">Rapid communication</h3>
+            <p class="upconf-how__body">
+                <strong>Stay connected with attendees.</strong> Successful conferences are well connected. UpConf
                 makes it easy to disseminate valuable information, and also gather critical feedback from attendees.
             </p>
         </div>
@@ -55,25 +55,25 @@
 </section>
 
 <section>
-    <div class="tracker-how page-container">
-        <div class="tracker-how__content">
-            <h3 class="tracker-how__heading">Radical collaboration</h3>
-            <p class="tracker-how__body">
-                <strong>Encourage the growth and spread of ideas.</strong> ConfTracker provides safe spaces for ideas to
+    <div class="upconf-how page-container">
+        <div class="upconf-how__content">
+            <h3 class="upconf-how__heading">Radical collaboration</h3>
+            <p class="upconf-how__body">
+                <strong>Encourage the growth and spread of ideas.</strong> UpConf provides safe spaces for ideas to
                 flourish by allowing attendees to connect, communicate, and align around exciting new ideas.
             </p>
         </div>
 
-        <img class="tracker-how__image" src="<%= Routes.static_path(@conn, "/images/DO_NOT_SHIP-third.svg") %>" alt="Third compelling image"/>
+        <img class="upconf-how__image" src="<%= Routes.static_path(@conn, "/images/DO_NOT_SHIP-third.svg") %>" alt="Third compelling image"/>
     </div>
 </section>
 
 <section>
-    <div class="tracker-what page-container">
-        <h2 class="tracker-what__heading">A smarter way to organize and collaborate</h2>
-        <p class="tracker-what__body">
+    <div class="upconf-what page-container">
+        <h2 class="upconf-what__heading">A smarter way to organize and collaborate</h2>
+        <p class="upconf-what__body">
             Succeeding in an evolving conference landscape requires modern tools that your organization and attendees
-            can depend on. ConfTracker is built for keeping pace with high functioning, connected conferences.
+            can depend on. UpConf is built for keeping pace with high functioning, connected conferences.
         </p>
     </div>
 </section>

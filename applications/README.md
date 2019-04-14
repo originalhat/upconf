@@ -1,4 +1,4 @@
-# trackerconf::applications
+# upconf::applications
 
 ## marketing
 

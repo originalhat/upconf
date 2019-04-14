@@ -1,4 +1,4 @@
-# ConfTracker::Marketing
+# UpConf::Marketing
 
 ## usage
 
