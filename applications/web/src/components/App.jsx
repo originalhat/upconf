@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import './App.css';
+import styles from './App.css';
 
 // import * as firebase from 'firebase/app';
 // import 'firebase/auth';
@@ -7,7 +7,9 @@ import React, {Component} from 'react';
 export default class App extends Component {
   render() {
     return (
-      <h1>hello world!!</h1>
+      <div className={styles['App']}>
+        <h1>UpConf</h1>
+      </div>
     );
   }
 }
