@@ -6,6 +6,6 @@ jobs:
       - image: circleci/ruby:2.4.2-stretch-node
     steps:
       - checkout
-      - run: cd ~/applications/web && yarn test
+      - run: cd ~/applications/web && ls -l && pwd
 #      - run: yarn build
 
