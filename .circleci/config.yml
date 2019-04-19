@@ -5,5 +5,6 @@ jobs:
       - image: circleci/ruby:2.4.2-stretch-node
     steps:
       - checkout
-      - run: echo "A first hello"
+      - run: yarn test
+      - run: yarn build
 
