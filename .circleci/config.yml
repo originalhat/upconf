@@ -7,6 +7,6 @@ jobs:
     steps:
       - checkout
       - run: ls -l && pws
-        path: ~/applications/web
+          path: ~/applications/web
 #      - run: yarn build
 
