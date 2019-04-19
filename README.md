@@ -1,3 +1,5 @@
-# upconf
+# UpConf
 
-A gathering place for refining taste and increase the knowledge of the participants through conversation.
+[![CircleCI](https://circleci.com/gh/originalhat/upconf.svg?style=svg)](https://circleci.com/gh/originalhat/upconf)
+
+A ***digital gathering place*** for sharing ideas and organizing conferences.
