@@ -32,11 +32,9 @@ const mapStateToProps = (state /*, ownProps*/) => {
   }
 };
 
-function mapDispatchToProps(dispatch) {
-  return {
-    increment: () => console.log('sdkjaskdjkasjd')
-  };
-}
+const mapDispatchToProps = dispatch => ({
+  increment: () => console.log('sdkjaskdjkasjd')
+});
 
 export default connect(
   mapStateToProps,
