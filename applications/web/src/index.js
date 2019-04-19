@@ -7,19 +7,18 @@ import {createBrowserHistory} from "history";
 import {Provider} from "react-redux";
 import rootReducer from "./AppReducer";
 import {Route, Switch} from "react-router";
-// import * as serviceWorker from './serviceWorker';
-// import * as firebase from 'firebase/app';
+import * as firebase from 'firebase/app';
 
-// const config = {
-//   apiKey: "AIzaSyBmLCm5hvVGvpGLtEVy_gUTtrn3_i65PoI",
-//   authDomain: "upconf-45ed3.firebaseapp.com",
-//   databaseURL: "https://upconf-45ed3.firebaseio.com",
-//   projectId: "upconf-45ed3",
-//   storageBucket: "upconf-45ed3.appspot.com",
-//   messagingSenderId: "825288737604"
-// };
-//
-// firebase.initializeApp(config);
+const config = {
+  apiKey: "AIzaSyBmLCm5hvVGvpGLtEVy_gUTtrn3_i65PoI",
+  authDomain: "upconf-45ed3.firebaseapp.com",
+  databaseURL: "https://upconf-45ed3.firebaseio.com",
+  projectId: "upconf-45ed3",
+  storageBucket: "upconf-45ed3.appspot.com",
+  messagingSenderId: "825288737604"
+};
+
+firebase.initializeApp(config);
 
 export const history = createBrowserHistory();
 
