@@ -5,6 +5,6 @@ set -e
 echo "## 🔥 applications:web 🔥 ##"
 
 pushd applications/web
-    yarn install --no-progress
-    yarn test
+  yarn install --no-progress
+  yarn test
 popd
