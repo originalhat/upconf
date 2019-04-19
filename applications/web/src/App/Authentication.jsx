@@ -8,17 +8,17 @@ export default class Authentication extends Component {
   // constructor(props) {
   //   super(props);
   //   this.state = {
-  //     user: {email: ''},
+  //     users: {email: ''},
   //     signedIn: false,
   //     signup: {email: '', password: ''},
   //     signin: {email: '', password: ''},
   //   };
   //
   //   // TODO: this should happen higher up, ideally before the component is mounted
-  //   firebase.auth().onAuthStateChanged((user) => {
-  //     if (user) {
-  //       console.log(`user: `, user);
-  //       this.setState({signedIn: true, user: {email: user.email}})
+  //   firebase.auth().onAuthStateChanged((users) => {
+  //     if (users) {
+  //       console.log(`users: `, users);
+  //       this.setState({signedIn: true, users: {email: users.email}})
   //     } else {
   //       this.setState({signedIn: false})
   //     }
@@ -81,7 +81,7 @@ export default class Authentication extends Component {
         {/*{*/}
         {/*  this.state.signedIn ?*/}
         {/*    <div className="App__Signout">*/}
-        {/*      <span>SIGNED IN AS <strong>{this.state.user.email}</strong></span>*/}
+        {/*      <span>SIGNED IN AS <strong>{this.state.users.email}</strong></span>*/}
         {/*      <span onClick={this.handleSignout}>logout</span>*/}
         {/*    </div>*/}
         {/*    :*/}

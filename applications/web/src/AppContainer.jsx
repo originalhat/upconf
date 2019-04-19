@@ -1,15 +1,44 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import styles from './AppContainer.css';
 import Header from "./App/Header";
 import Authentication from "./App/Authentication";
+import {connect} from "react-redux";
 
-export default class AppContainer extends Component {
+class AppContainer extends Component {
+  static propTypes = {
+    users: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string
+      })
+    )
+  };
+
   render() {
     return (
       <div className={styles['AppContainer']}>
-        <Header />
-        <Authentication />
+        <Header users={this.props.users}/>
+        <Authentication/>
       </div>
     );
   }
 }
+
+const mapStateToProps = (state /*, ownProps*/) => {
+  return {
+    conferences: state.conferences,
+    presentations: state.presentations,
+    users: state.users,
+  }
+};
+
+function mapDispatchToProps(dispatch) {
+  return {
+    increment: () => console.log('sdkjaskdjkasjd')
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(AppContainer)

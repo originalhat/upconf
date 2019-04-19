@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
 import AppContainer from './AppContainer';
+import {createStore} from "redux";
+import {rootReducer} from "./AppReducer";
+import {Provider} from "react-redux";
 // import * as serviceWorker from './serviceWorker';
 // import * as firebase from 'firebase/app';
 
@@ -16,4 +19,15 @@ import AppContainer from './AppContainer';
 //
 // firebase.initializeApp(config);
 
-ReactDOM.render(<AppContainer />, document.getElementById('root'));
+const store = createStore(rootReducer);
+
+function renderAppRoot() {
+  ReactDOM.render(
+    <Provider store={store}>
+      <AppContainer/>
+    </Provider>,
+    document.getElementById('root'));
+}
+
+store.subscribe(renderAppRoot);
+renderAppRoot();
