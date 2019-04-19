@@ -1,11 +1,10 @@
 version: 2.0
 jobs:
   build:
-    working_directory: ~/applications/web
     docker:
       - image: circleci/ruby:2.4.2-stretch-node
     steps:
       - checkout
-      - run: cd ~/applications/web && ls -l && pwd
-#      - run: yarn build
+      - run: ./scripts/test.sh
+      - run: ./scripts/build.sh
 
