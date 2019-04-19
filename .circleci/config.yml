@@ -1,11 +1,12 @@
 version: 2.0
 jobs:
   build:
-    working_directory: ~/applications/web
+#    working_directory: ~/applications/web
     docker:
       - image: circleci/ruby:2.4.2-stretch-node
     steps:
       - checkout
-      - run: yarn test
-      - run: yarn build
+      - run: ls -l && pws
+#          path: ~/spring-tutorial
+#      - run: yarn build
 
