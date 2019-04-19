@@ -6,5 +6,6 @@ echo "## 🔥 applications:web 🔥 ##"
 
 pushd applications/web
   yarn install --no-progress
-  yarn deploy
+  yarn build:production
+  yarn firebase deploy --token "$FIREBASE_TOKEN"
 popd
