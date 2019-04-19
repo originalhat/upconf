@@ -1,7 +1,7 @@
 import '../config/spec_helper';
 import * as React from 'react';
 import {shallow} from 'enzyme';
-import AppContainer from "./AppContainer";
+import {AppContainer} from "./AppContainer";
 import Header from "./App/Header";
 import Authentication from "./App/Authentication";
 

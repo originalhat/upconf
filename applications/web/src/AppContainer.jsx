@@ -5,7 +5,7 @@ import Header from "./App/Header";
 import Authentication from "./App/Authentication";
 import {connect} from "react-redux";
 
-class AppContainer extends Component {
+export class AppContainer extends Component {
   static propTypes = {
     users: PropTypes.arrayOf(
       PropTypes.shape({

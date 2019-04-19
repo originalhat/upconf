@@ -1,10 +1,12 @@
+import AppContainer from './AppContainer';
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-import AppContainer from './AppContainer';
-import {createStore} from "redux";
-import {rootReducer} from "./AppReducer";
+import {applyMiddleware, compose, createStore} from "redux";
+import {ConnectedRouter, routerMiddleware} from "connected-react-router";
+import {createBrowserHistory} from "history";
 import {Provider} from "react-redux";
+import rootReducer from "./AppReducer";
+import {Route, Switch} from "react-router";
 // import * as serviceWorker from './serviceWorker';
 // import * as firebase from 'firebase/app';
 
@@ -19,12 +21,28 @@ import {Provider} from "react-redux";
 //
 // firebase.initializeApp(config);
 
-const store = createStore(rootReducer);
+export const history = createBrowserHistory();
+
+const store = createStore(
+  rootReducer(history),
+  compose(
+    applyMiddleware(
+      routerMiddleware(history),
+    )
+  )
+);
 
 function renderAppRoot() {
   ReactDOM.render(
     <Provider store={store}>
-      <AppContainer/>
+      <ConnectedRouter history={history}>
+        <div>
+          <Switch>
+            <AppContainer/>
+            <Route exact path="/" render={() => <AppContainer/>}/>
+          </Switch>
+        </div>
+      </ConnectedRouter>
     </Provider>,
     document.getElementById('root'));
 }

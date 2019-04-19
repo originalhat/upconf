@@ -1,4 +1,5 @@
 import {combineReducers} from 'redux';
+import {connectRouter} from "connected-react-router";
 
 let initialState = {
   conferences: [
@@ -26,7 +27,8 @@ const users = (state = initialState.users, action) => {
   return state;
 };
 
-export const rootReducer = combineReducers({
+export default (history) => combineReducers({
+  router: connectRouter(history),
   conferences,
   presentations,
   users,
