@@ -9,3 +9,9 @@ jobs:
       - run: ./scripts/test.sh
       - run: ./scripts/deploy.sh
 
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+
