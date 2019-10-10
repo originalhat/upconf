@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.4.2-stretch-node
+    resource_class: xlarge
     steps:
       - checkout
       - run: ./scripts/test.sh
