@@ -6,20 +6,26 @@ jobs:
     resource_class: xlarge
     steps:
       - checkout
-      - run: ./scripts/test.sh
+      - run: echo "test step"
   deploy:
     docker:
       - image: circleci/ruby:2.4.2-stretch-node
     resource_class: medium
     steps:
       - checkout
-      - run: ./scripts/deploy.sh
+      - run: echo "deploy step"
+  print:
+    docker:
+      - image: circleci/ruby:2.4.2-stretch-node
+    resource_class: medium
+    steps:
+      - checkout
+      - run: echo "print step"
 
 workflows:
   version: 2
-  test_and_deploy:
+  test_and_deploy_and_print:
     jobs:
       - test
-      - deploy:
-          requires:
-            - test
+      - deploy
+      - print
