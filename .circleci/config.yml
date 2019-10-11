@@ -7,19 +7,9 @@ jobs:
     steps:
       - checkout
       - run: echo "test step"
-  deploy:
-    docker:
-      - image: circleci/ruby:2.4.2-stretch-node
-    resource_class: xlarge
-    steps:
-      - checkout
-      - run: echo "deploy step"
 
 workflows:
   version: 2
   test_and_deploy:
     jobs:
       - test
-      - deploy:
-          requires:
-            - test
