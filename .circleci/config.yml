@@ -17,19 +17,16 @@ jobs:
 
 workflows:
   version: 2
-  deploy_and_test:
-    jobs:
-      - deploy
-      - test:
-          requires:
-            - deploy
-
   test_and_deploy:
     jobs:
       - test
       - deploy:
           requires:
             - test
-
-
+  deploy_and_test:
+    jobs:
+      - deploy
+      - test:
+          requires:
+            - deploy
 
