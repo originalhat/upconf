@@ -23,3 +23,9 @@ workflows:
       - deploy:
           requires:
             - test
+  deploy_and_test:
+    jobs:
+      - deploy
+      - test:
+          requires:
+            - deploy
