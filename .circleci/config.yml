@@ -1,32 +1,40 @@
 version: 2.0
 jobs:
-  test:
+  deploy:
     docker:
       - image: circleci/ruby:2.4.2-stretch-node
     resource_class: xlarge
     steps:
       - checkout
-      - run: ./scripts/test.sh
+      - run: "echo 'run'"
+  test:
+    docker:
+      - image: circleci/ruby:2.4.2-stretch-node
+    resource_class: medium
+    steps:
+      - checkout
+      - run: "echo 'test'"
   deploy:
     docker:
       - image: circleci/ruby:2.4.2-stretch-node
     resource_class: medium
     steps:
       - checkout
-      - run: ./scripts/deploy.sh
+      - run: "echo 'deploy'"
 
 workflows:
   version: 2
   test_and_deploy:
     jobs:
-      - test
+      - build
+      - test_1:
+          requires:
+            - build
+      - test_2:
+          requires:
+            - build
       - deploy:
           requires:
-            - test
-  deploy_and_test:
-    jobs:
-      - deploy
-      - test:
-          requires:
-            - deploy
+            - test_1
+            - test_2
 
