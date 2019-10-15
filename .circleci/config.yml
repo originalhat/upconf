@@ -3,14 +3,14 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.4.2-stretch-node
-    resource_class: medium
+    resource_class: xlarge
     steps:
       - checkout
       - run: "echo 'build'"
   test:
     docker:
       - image: circleci/ruby:2.4.2-stretch-node
-    resource_class: xlarge
+    resource_class: medium
     steps:
       - checkout
       - run: "echo 'test'"
