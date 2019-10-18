@@ -9,34 +9,34 @@ jobs:
       - setup_remote_docker:
           docker_layer_caching: true
       - run: "echo 'build'"
-  test:
-    docker:
-      - image: circleci/ruby:2.4.2-stretch-node
-    resource_class: medium
-    steps:
-      - checkout
-      - run: "echo 'test'"
-  deploy:
-    docker:
-      - image: circleci/ruby:2.4.2-stretch-node
-    resource_class: xlarge
-    steps:
-      - checkout
-      - run: "echo 'deploy'"
+#  test:
+#    docker:
+#      - image: circleci/ruby:2.4.2-stretch-node
+#    resource_class: medium
+#    steps:
+#      - checkout
+#      - run: "echo 'test'"
+#  deploy:
+#    docker:
+#      - image: circleci/ruby:2.4.2-stretch-node
+#    resource_class: xlarge
+#    steps:
+#      - checkout
+#      - run: "echo 'deploy'"
 
-workflows:
-  version: 2
-  test_and_deploy:
-    jobs:
-      - build
-      - test_1:
-          requires:
-            - build
-      - test_2:
-          requires:
-            - build
-      - deploy:
-          requires:
-            - test_1
-            - test_2
-
+#workflows:
+#  version: 2
+#  test_and_deploy:
+#    jobs:
+#      - build
+#      - test_1:
+#          requires:
+#            - build
+#      - test_2:
+#          requires:
+#            - build
+#      - deploy:
+#          requires:
+#            - test_1
+#            - test_2
+#
