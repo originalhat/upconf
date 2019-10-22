@@ -24,18 +24,18 @@ jobs:
       - checkout
       - run: "echo 'deploy'"
 
-workflows:
-  version: 2
-  test_and_deploy:
-    jobs:
-      - test_1:
-          requires:
-            - test
-      - test_2:
-          requires:
-            - test
-      - deploy:
-          requires:
-            - test_1
-            - test_2
-
+#workflows:
+#  version: 2
+#  test_and_deploy:
+#    jobs:
+#      - test_1:
+#          requires:
+#            - test
+#      - test_2:
+#          requires:
+#            - test
+#      - deploy:
+#          requires:
+#            - test_1
+#            - test_2
+#
